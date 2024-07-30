@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html,
+body {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.shadow-purple {
+    text-shadow: 0 4px 0 #c3a5f5;
+}
+
+.shadow-noneS {
+    text-shadow: none !important;
+}
+
+
+.shadow-red {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    --tw-drop-shadow: drop-shadow(0 8px 0 #ffa9af);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 350ms;
+}
+
+.shadow-red:hover {
+    --tw-drop-shadow: drop-shadow(0 0px 0 #ffa9af);
+}
+
+/* .texturedBg {
+    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgb(255 221 214 / 80%)), url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+} */
+
+
+.textGradientDark {
+    background: linear-gradient(90deg, rgba(117,255,71,1) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.textGradient {
+    background: linear-gradient(90deg, rgb(59, 21, 4) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
